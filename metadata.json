@@ -1,0 +1,141 @@
+{
+	"name":"Wingdome",
+	"thumbnail":"wingdome.png",
+	"screenshot":"wingdome.png",
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#f0f0f0",
+            "color3":"#c02e19",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#484848",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#e6e9f1",
+            "color3":"#5e86e1",
+            "color4":"#4f5355",
+            "color5":"#7d8c97",
+            "color6":"#484848",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#e6e9f1",
+            "color3":"#5e86e1",
+            "color4":"#4f5355",
+            "color5":"#7d8c97",
+            "color6":"#484848",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#e6e9f1",
+            "color3":"#5e86e1",
+            "color4":"#4f5355",
+            "color5":"#7d8c97",
+            "color6":"#484848",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#e6e9f1",
+            "color3":"#5e86e1",
+            "color4":"#4f5355",
+            "color5":"#7d8c97",
+            "color6":"#484848",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Arvo",
+        "font1": {
+            "font-family": "Arvo",
+            "font-size": "38px",
+            "font-weight": "700",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
+        },
+        "font2": {
+            "font-family": "Courgette",
+            "font-size": "36px",
+            "font-weight": "inherit",
+            "line-height": "48px",
+            "color": "@color-swatch3",
+            "letter-spacing": "-2px"
+        },
+        "font3": {
+            "font-family": "Arvo",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
+        },
+        "font4": {
+            "font-family": "Roboto",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
+        },
+        "font5": {
+            "font-family": "Abel",
+            "font-size": "19px",
+            "font-weight": "inherit",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Merriweather",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch6",
+            "color-hover": "lighten(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font7": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,8%)"
+        },
+        "font8": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+         "font10": {
+            "font-family": "Merriweather",
+            "font-size": "25px",
+            "font-weight": "300",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}

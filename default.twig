@@ -1,0 +1,48 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="canvas">
+	
+<header>
+	<div class="header-bg wrapper clearfix">
+	    <div class="companyheader clearfix">
+	        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	    </div>
+	    {{widget('extendednavigation', 'navigationheader', {})|raw}}
+	</div>
+</header>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="responsivecolumns columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'footercolumn1content1', {"content":'<h2>LOREM IPSUM</h2>'})|raw}}
+
+                {% if profile.companydescription|length > 0 %}  
+                   {{widget('profile', 'footercolumn1profilecompanydescription', { 'profileType':'companydescription', 'companydescription':'profile'})|raw}}
+                {% else %}
+                	{{widget('content', 'footercolumn1content2', {"content":'<p>Integer a Tortor dui nullam nec antemi morbi sodales urna sit amet mauris.</p>'})|raw}}
+                {% endif %}
+
+            </div>
+            <div class="column columns-three-middle">
+            	{{widget('content', 'footercolumn2content1', {"content":'<h2>THOATES ORA</h2>'})|raw}}
+                {{widget('profile', 'footercolumn2profileemail', { 'profileType':'phone', 'phone':'profile'})|raw}}
+            	{{widget('profile', 'footercolumn2profilephone', { 'profileType':'email', 'email':'profile'})|raw}}
+            </div>
+            <div class="column columns-three-right">
+                {{widget('content', 'footercolumn3content1', {"content":'<h2>SOLADES</h2>'})|raw}}
+                {{widget('profile', 'footercolumn3socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}

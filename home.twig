@@ -1,0 +1,155 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="canvas">
+	
+<header class="wrapper clearfix">
+    <div class="responsivecolumns columns-two-50-50">
+        <div class="column columns-two-left">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('content', 'headercolumn1content2', {"content":'<h2>Here&#39;s How We Fly!</h2>'})|raw}}
+        </div>
+        <div class="column columns-two-right">
+            <div class="box">
+                <div class="box-header clearfix">
+                    {{widget('content', 'headercolumn2content2', {"content":'<h3>SAUCES TO GO!</h3>'})|raw}}
+                </div>
+                <div class="box-main sauces">
+                    {{widget('content', 'headercolumn2content3', {"content":'<h3>Take home a jar of your favourite sauce as a gift.</h3><p>ASK YOUR SERVER FOR DETAILS</p>'})|raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main wrapper clearfix">
+
+    <!-- ORDERING !-->
+    <div class="ordering">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                <div class="order">
+                    {{widget('content', 'headercolumn1content1', {"content":'<h2>1. Order Your Wings</h2><h3>ALL WINGS ARE $7.99 PER POUND</h3><p>7-10 wings per pound. Wings will vary in size by season but you will always get a pound (raw weight).</p>'})|raw}}
+                </div>
+                <div class="arrow-bg">
+                    {{widget('content', 'headercolumn1content2', {"content":'<h2>2. Choose Your sauce...</h2><h3>1 SAUCE PER POUND <span>- EXTRA WET, .69/LB</span></h3>'})|raw}}
+                </div>
+            </div>
+            <div class="column columns-two-right">
+                <div class="order">
+                    {{widget('content', 'headercolumn2content1', {"content":'<h2>3. Choose Your Dressing</h2><h3>RANCH <span>or</span> BLUE CHEESE</h3><p>Extra Dressing: SMALL .69 / LARGE .99</p><p>'})|raw}}
+                </div>
+               {{widget('content', 'headercolumn2content2', {"content":'<h2>4. Choose a Drink</h2><p>Pepsi, Diet Pepsi, Lemonade, Dr. Pepper, Root Beer, Sierra Mist, Mountain Dew, Iced Tea</p>'})|raw}}
+            </div>
+        </div>
+    </div>
+    <!-- END ORDERING !-->
+
+    <!-- MAIN DISHES !-->
+    <div class="maindishes reduce">
+        <div class="responsivecolumns columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'maindishescolumn1content1', {"content":'<h2>Traditional</h2>'})|raw}}
+                {{widget('content', 'maindishescolumn1content2', {"content":'<h3>0. NAKED <span>- Child&#39;s Play</span></h3><h3>1. ALARM <span>- Mild &amp; Flavourful</span></h3><h3>2. ALARM <span>- User Friendly</span></h3><h3>3. ALARM<span>- Our Most Popular</span></h3><h3>4. ALARM <span>- On the Hot Side</span></h3><h3>5. ALARM <span>- Ouch! Severe Heat</span></h3><h3>6. ALARM <span>- I Can&#39;t Feel My Face</span></h3><h3>7. ALARM <span>- Wing Test! $1.99 p/wing</span></h3>'})|raw}}
+            </div>
+            <div class="column columns-three-middle">
+                {{widget('content', 'maindishescolumn2content1', {"content":'<h2>Specialty</h2>'})|raw}}
+                {{widget('content', 'maindishescolumn2content2', {"content":'<h3>THE BIGGER BADDER CHEESE</h3><p>Parmesan, garlic, lemon, and more Parmesan</p><h3>WESTERN BBQ</h3><p>Molasses, cayenne, garlic and brown sugar.</p><h3>HONEY MUSTARD</h3><p>Zesty mustard with a kick of honey.</p><h3>KAZMIKAZE</h3><p>For teriyaki lovers, with garlic, pineapple, and toasted sesame seeds.</p><h3>TRIPLE GARLIC</h3><p>Garlic and more garlic with black pepper and sesame.</p>'})|raw}}
+            </div>
+            <div class="column columns-three-right">
+                {{widget('content', 'maindishescolumn1content1', {"content":'<h2>&amp; More...</h2>'})|raw}}
+                {{widget('content', 'maindishescolumn3content2', {"content":'<h3>THAI SWEET CHILLI</h3><p>Sweet with a touch of Thai chilli spice.</p><h3>RASTA</h3><p>A Jamaican blend of spict jerk seasoning, cinnamon, nutmeg and lime.</p><h3>SAMBAL PEANUT SAUCE</h3><p>Chilli pepper sauce, red curry, crunchy peanuts.</p><h3>BLAZIN&#39; CHIPOTLE</h3><p>Chipotle hot sauce, honey, smoke, and fire.</p><h3>BUFFALO JUICE</h3><p>Do you miss your east coast basting sauce? We flew out Uncle Franks to make you feel at home!</p>'})|raw}}
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN DISHES !-->
+
+    <!-- WING CHALLENGE !-->
+    <div class="wingchallenge">
+        <div class="responsivecolumns columns-two-66-34">
+            <div class="column columns-two-left">
+                <div class="box">
+                    <div class="box-main">
+                        {{widget('content', 'wingchallengecolumn1content1', {"content":'<h3>7 DEADLY WING CHALLENGE</h3>'})|raw}}
+                        {{widget('content', 'wingchallengecolumn1content2', {"content":'<p>If you dare...Eat <span>7 ALARM WINGS</span> in <span>7 MINUTES</span> with no beverages and get a 7 Deadly Wing Challenge <span>T-SHIRT</span> and your face on the <span>"WALL OF FLAME!"</span></p><p><span>FREE!</span> If you follow the rules and beat the clock...<span>$7.77</span> if you fail!'})|raw}}
+                        <div class="double-line"></div>
+                        {{widget('content', 'wingchallengecolumn1content3', {"content":'<h2>Order a 7 Alarm Recovery Kit in Advance!</h2><p>2 ice cold milks + 1 ice cream sandwich to fix your pain!</p>'})|raw}}
+                    </div>
+                </div>
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'wingchallengecolumn2content1', {"content":'<h2>Enjoy a Cold One...</h2>'})|raw}}
+                <div class="drinks">
+                    {{widget('content', 'wingchallengecolumn2content2', {"content":'<h4>SCHOONER EXACT 3 IPA</h4><h4>MANNY&#39;S PALE ALE</h4><h4>HEFEWEIZEN</h4><h4>COORS LIGHT</h4><h4>PERONI EXTRA</h4><h4>MAC AND JACK&#39;S AMBER</h4>'})|raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END WING CHALLENGE !-->
+
+    <!-- BOTTOM !-->
+    <div class="maindishes bottom">
+        <div class="responsivecolumns columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'maindishescolumn1content1', {"content":'<h1>DAILY SPECIALS</h1>'})|raw}}
+
+                {{widget('content', 'bottomcolumn1content2', {"content":'<h3>- MONDAY MADNESS -</h3><p>W/ BEVERAGE PURCHASE</p><p>Specialty sauces or 1-6 Alarm Sauces 1 Sauce per pound - Ranch &amp; Blue Cheese .69 Extra</p>'})|raw}}
+
+                {{widget('content', 'bottomcolumn1content3', {"content":'<h3>- TUESDAY -</h3><h4>DAD&#39;S DAY TO COOK</h4><p>For every one adult that purchases an entree, every one kid eats free from our kids menu!</p><p>DOMESTIC / IMPORT BOTTLES - $2.50</p>'})|raw}}
+
+                {{widget('content', 'bottomcolumn1content4', {"content":'<h3>- WEDNESDAY -</h3><h4>BLACKBOARD BARGAIN DAY</h4><p>Order a SPECIAL and get a DRAFT BEER at $1!</p>'})|raw}}
+
+                {{widget('content', 'bottomcolumn1content5', {"content":'<h3>- THURSDAY -</h3><h4>3LB WINGS &amp; SUDS</h4><p>Sauce em&#39; 3 ways and a get pitcher of craft beer or pop for $32.99</p>'})|raw}}
+
+                {{widget('content', 'bottomcolumn1content6', {"content":'<h3>- FAB FEAST SUNDAY -</h3><h4>3LB WINGS &amp; SUDS</h4><p>Bring the crew and get ready to grub!</p><p>6LB Wings - Sauce em&#39; 6 ways with a large basket of WONDER FRIES and a WING DOME or CAESAR SALAD BOWL. $48.99</p>'})|raw}}
+
+            </div>
+            <div class="column columns-three-middle">
+                <div class="cocktails">
+                    {{widget('content', 'bottomcolumn2content1', {"content":'<h1>COCKTAILS</h1>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn2content2', {"content":'<h4>CADILLAC MARGARITA</h4><p>El Jimador Tequila with sweet &amp; sour and a splash of Grand Marnier on the rocks. $7.99</p>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn3content3', {"content":'<h4>TRANSMISSION FLUID</h4><p>Absolut Vodka, Blue Curacao, blackberry puree, lemonade. $7.99</p>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn2conten4', {"content":'<h4>THE WINGDOME BLOODY MARY</h4><p>Vodka and a special blend of exotic spiced Bloody Mary Mix from that crazy mechanic back in our garage, served on the rocks. $5.99.</p>'})|raw}}
+                </div>
+                <div class="lunch">
+                    {{widget('content', 'bottomcolumn2content5', {"content":'<h1>LUNCH</h1>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn2content6', {"content":'<p>Monday - Friday, 11am - 3pm. Dine-in Only. Includes Fries or Salad</p>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn2content3', {"content":'<h4>1 LB WINGS. $8.99</h4><h4>1 &frac12; LB WINGS. $12.99</h4><h4>BURGER / SANDWICH. $8.99</h4><h4>SALAD BOX. $5.99</h4><h4>WING / DOMEBOX. $7.99</h4>'})|raw}}
+                </div>
+            </div>
+            <div class="column columns-three-right">
+                <div class="box">
+                    <div class="box-main growler">
+                        {{widget('content', 'bottomcolumn3content1', {"content":'<h3>Grab a GROWLER TO GO with your favourite beer!</h3><p>ASK YOUR SERVER FOR DETAILS</p>'})|raw}}
+                    </div>
+                </div>
+                <div class="drink-list">
+                    {{widget('content', 'bottomcolumn3content2', {"content":'<h1>BOTTLE BEER</h1>'})|raw}}
+
+                    {{widget('content', 'bottomcolumn2content3', {"content":'<h4>MGD</h4><h4>CORONA</h4><h4>DOS EQUIS LAGER</h4><h4>HEINEKEN</h4><h4>MILLER HIGH LIFE</h4><h4>BUD/BUD LIGHT</h4><h4>BLUE MOON</h4>'})|raw}}
+
+                    <div class="beverages">
+                        {{widget('content', 'bottomcolumn3content4', {"content":'<h1>BEVERAGES</h1>'})|raw}}
+                        {{widget('content', 'bottomcolumn2content5', {"content":'<h4>STRAWBERRY LEMONDADE</h4><p>$2.99 (REFILLS)</p><h4>FOUNTAIN DRINKS</h4><p>20 OUNCE REFILLABLE. $2.99</p><p>Pepsi, Diet Pepsi, Lemonade, Dr. Pepper, Root Beer, Sierra Mist, Mountain Dew, Iced Tea</p>'})|raw}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BOTTOM !-->
+
+    {{zone('main')|raw}}
+
+</div>
+
+</div>
+
+{% endblock %}
+
+
