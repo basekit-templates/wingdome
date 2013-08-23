@@ -198,7 +198,9 @@ header h1 {
 }
 
 header h2 {
-    padding: 10px 0 0;
+    padding: 0;
+    font-size: bkscale(@font-swatch2-font-size,1.2);
+    line-height: bkscale(@font-swatch2-line-height,1.3);
 }
 
 span {
@@ -235,34 +237,13 @@ span {
 
 /* FEATURE BOX */
 
-/*.tag-triangle.right {
-    border-color: transparent transparent transparent @color-swatch4;
-    border-style:solid;
-    border-width:31px;
-    width:0;
-    height:0;
-    float:left;
-}
-
-.tag-rectangle {
-    background-color: @color-swatch4;
-    width: 85%;
-    height:62px;
-    display:inline;
-    float:left;
-    padding: 14px 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}*/
-
 .box {
     width: 77%;
     margin: 0 auto 20px;
 }
 
 header .box {
-    margin-top: 36px;
+    margin-top: 16px;
 }
 
 .box h3 {
@@ -1655,6 +1636,7 @@ hr.line.align-right {
     h1 {
         font-size: bkscale(@font-swatch1-font-size,0.8);
         line-height: bkscale(@font-swatch1-line-height,0.7);
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -1662,10 +1644,29 @@ hr.line.align-right {
         line-height: bkscale(@font-swatch2-line-height,0.7);
     }
 
+    header h2 {
+        font-size: bkscale(@font-swatch2-font-size,0.9);
+        line-height: bkscale(@font-swatch2-line-height,1);
+    }
+
+    .wingchallenge h2 {
+        padding: 0;
+    }
+
     /* H3's */
 
     h3 {
         font-size: bkscale(@font-swatch3-font-size,0.9);
+        line-height: bkscale(@font-swatch3-line-height,0.8);
+    }
+
+    .box h3 {
+        font-size: bkscale(@font-swatch3-font-size,1.2);
+
+    }
+
+    .box .box-header h3 {
+        font-size: bkscale(@font-swatch3-font-size,1.3);
         line-height: bkscale(@font-swatch3-line-height,0.8);
     }
 
@@ -1687,10 +1688,6 @@ hr.line.align-right {
         font-size: bkscale(@font-swatch5-font-size,0.9);
         line-height: bkscale(@font-swatch5-line-height,0.9);
     }
-   
-   header .box {
-    margin-top: 0;
-   }
 
     /* NAV ICON */
 
@@ -1808,6 +1805,10 @@ hr.line.align-right {
 
     header {
         padding: 40px 0 0;
+    }
+
+    header h2 {
+        padding: 0px 0 30px;
     }
 
     header .box {
